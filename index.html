@@ -36,7 +36,8 @@ fetch('https://api.nal.usda.gov/fdc/v1/food/1050713?api_key=DEMO_KEY').then(data
   alert("fetchResults F")
   return data.json();
   document.getElementById("demo1").innerHTML = data;
-}).then(post => {
+}).then(console.log)
+  .then(post => {
 console.log(post.title);
 alert(result);
 });
