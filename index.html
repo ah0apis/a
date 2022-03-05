@@ -1,0 +1,95 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>Hello ahmed</h1>
+<p id="demo"></p>
+<script>
+
+json='{"name":"John", 
+
+"age":30, "city":"New 
+
+York"}'
+const obj = JSON.parse
+
+('{"name":"John", "age":30, 
+
+"city":"New York"}');
+const obj1 = JSON.parse
+
+(json)
+
+document.getElementById
+
+("demo").innerHTML = 
+
+obj.name;
+
+  // Defining a baseURL and 
+
+key to as part of the 
+
+request URL
+
+const baseURL = 
+
+'https://api.nal.usda.gov/f
+
+dc/';
+const key = 'DEMO_KEY';
+const FDC = 
+
+'v1/food/1050713'
+
+let url;
+
+function fetchResults() {
+alert("start fetchResults 
+
+F")
+  
+// Assemble the full URL
+url = baseURL + FDC + '?
+
+api-key=' + key
+  
+
+//url='https://api.nal.usda
+
+.gov/fdc/v1/foods/list?
+
+api_key=DEMO_KEY'
+  
+
+//url='https://api.nal.usda
+
+.gov/fdc/v1/food/1050713?
+
+api_key=DEMO_KEY'
+
+// Use fetch() to make the 
+
+request to the API
+
+fetch(url).then(function
+
+(result) {
+  console.alert
+
+("fetchResults F" + ++i)
+  return result.json();
+}).then(function(json) {
+  displayResults(json);
+alert(result);
+});
+alert("end fetchResults F")
+
+}
+
+fetchResults()
+
+</script>
+</body>
+</html>
