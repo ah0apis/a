@@ -23,7 +23,7 @@ function fetchResults() {
 alert("start fetchResults F")
   
 // Assemble the full URL
-url = baseURL + FDC + '?api-key=' + key
+//url = baseURL + FDC + '?api-key=' + key
 
 //url='https://api.nal.usda.gov/fdc/v1/foods/list?api_key=DEMO_KEY'
 
@@ -31,7 +31,7 @@ url = baseURL + FDC + '?api-key=' + key
 
 // Use fetch() to make the request to the API
  
-fetch(url).then(data => {
+fetch('https://api.nal.usda.gov/fdc/v1/food/1050713?api_key=DEMO_KEY').then(data => {
   alert("fetchResults F")
   return data.json();
 }).then(post => {
