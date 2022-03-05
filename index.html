@@ -33,14 +33,9 @@ alert("start fetchResults F")
 // Use fetch() to make the request to the API
  
 fetch('https://api.nal.usda.gov/fdc/v1/food/1050713?api_key=DEMO_KEY').then(data => {
-  alert("fetchResults F")
   return data.json();
   document.getElementById("demo1").innerHTML = data;
-}).then(console.log)
-  .then(post => {
-console.log(post.title);
-alert(result);
-});
+}).then(console.log);
 alert("end fetchResults F")
 }
 
