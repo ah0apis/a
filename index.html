@@ -3,8 +3,9 @@
 
 </head>
 <body>
-<h1>Hello ahmed</h1>
+<h1>Hello ahmed1</h1>
 <p id="demo"></p>
+  <p id="demo1"></p>
 <script>
 
 json='{"name":"John", "age":30, "city":"New York"}'
@@ -34,6 +35,7 @@ alert("start fetchResults F")
 fetch('https://api.nal.usda.gov/fdc/v1/food/1050713?api_key=DEMO_KEY').then(data => {
   alert("fetchResults F")
   return data.json();
+  document.getElementById("demo1").innerHTML = json;
 }).then(post => {
 console.log(post.title);
 alert(result);
