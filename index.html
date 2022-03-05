@@ -3,7 +3,7 @@
 
 </head>
 <body>
-<h1>Hello ahmed1</h1>
+<h1>Hello ahmed</h1>
 <p id="demo"></p>
 <script>
 
@@ -30,12 +30,12 @@ url = baseURL + FDC + '?api-key=' + key
 //url='https://api.nal.usda.gov/fdc/v1/food/1050713?api_key=DEMO_KEY'
 
 // Use fetch() to make the request to the API
-
-fetch(url).then(function(result) {
-  alert("fetchResults F" + ++i)
-  return result.json();
-}).then(function(json) {
-  displayResults(json);
+ 
+fetch(url).then(data => {
+  alert("fetchResults F")
+  return data.json();
+}).then(post => {
+console.log(post.title);
 alert(result);
 });
 alert("end fetchResults F")
