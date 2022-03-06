@@ -49,7 +49,8 @@ document.getElementById('button3').addEventListener('click', getDataFromExternal
 
 // Function to get the data from an external API
 function getDataFromExternalAPI() {
-  fetch('https://api.github.com/users')
+  //fetch('https://api.github.com/users')
+    fetch('https://api.nal.usda.gov/fdc/v1/food/1050713?api_key=DEMO_KEY')
       .then(res => res.json())
       .then(data => {
         console.log(data);
