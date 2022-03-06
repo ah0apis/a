@@ -54,7 +54,7 @@ function getDataFromExternalAPI() {
       .then(res => res.json())
       .then(data => {
         console.log(data);
-
+        console.log("data");
         // Displaying to the UI
         let output = '';
         data.forEach(function(user) {
